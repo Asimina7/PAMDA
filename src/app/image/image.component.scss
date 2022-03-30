@@ -1,0 +1,44 @@
+#pos{
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.btn {
+    //border-color: rgb(112, 136, 222);
+    //background-color: linear-gradient(#020202, #5A4C75);
+   // background-color: rgb(112, 136, 222);
+   //background: rgb(2,2,2);
+   background-color: #E4B564;
+   //background: linear-gradient(-90deg, rgba(2,2,2,1) 0%, rgba(90,76,117,1) 90%);
+    
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    // background-color:#7088DE;
+    // margin-left: 50px;
+    // margin-right: 50px;
+    // border-radius: 21px;
+    // min-width: 50px;
+
+}    
+
+// .btn:hover{
+//         background-color: #13445e;
+//         border: 1px solid #daf1ff; 
+//     }
+
+
+
+.page {
+    /* The image used */
+    background-image: url('/assets/images/5.png');
+    
+    /* Full height */
+    // height: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
