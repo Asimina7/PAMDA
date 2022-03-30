@@ -1,0 +1,120 @@
+body{  
+    background:#1C121C;
+    background-attachment: fixed;
+    
+}
+
+
+$sample-gap: 20px;
+
+:host {
+	display: block;
+	padding: $sample-gap;
+}
+
+.sample-split,
+.sample-step-actions {
+	display: flex;
+	gap: $sample-gap;
+}
+
+.sample-split {
+	> * {
+		max-width: 380px;
+		flex: 1;
+	}
+
+	margin-bottom: $sample-gap;
+}
+
+
+#nextbutton, #finishbutton{
+    margin-top: 25px;
+    background-color: #7088DE;
+    border-radius: 27px;
+}
+
+#prevbutton{
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 27px;
+    background-color: #7088DE;
+}
+
+
+
+.sample-step-actions,
+.card-wrapper,
+.success-message,
+.success-text {
+	display: flex;
+}
+
+.sample-row {
+    display: flex;
+    margin-left: 35px;
+}
+
+.form-row {
+    display: flex;
+    width: max-content;
+}
+
+.form-control {
+    border-radius: 27px;
+}
+
+#congrats, #complete {
+    color: #D7D3DB;
+}
+
+input::placeholder {
+    opacity: 20%;
+}
+
+
+
+// .sample-terms {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: flex-start;
+
+// 	> a {
+// 		margin-left: rem(8px);
+// 		color: #7088DE;
+// 		text-decoration: none;
+
+// 		&:hover {
+// 			//color: color($default-palette, 'primary', 600);
+// 		}
+// 	}
+// }
+
+@import '~igniteui-angular/lib/core/styles/themes/index';
+
+$my-stepper-theme: stepper-theme(
+    $current-indicator-background: #7088DE,
+    $current-indicator-outline:#7088DE,
+    $indicator-background: #afb0b4,
+    $indicator-outline:#afb0b4,
+    $title-color: #D7D3DB,
+    $subtitle-color: #D7D3DB,
+    $current-title-color: #D7D3DB,
+    $current-subtitle-color: #D7D3DB,
+    $step-hover-background: none,
+    $current-step-hover-background: none,
+    $title-hover-color: none,
+    $current-title-hover-color: none,
+    
+
+);
+// should replace with:
+// $complete-indicator-background: #7088DE,
+//     $complete-indicator-outline: #7088DE
+
+// Pass the theme to the stepper component mixin
+@include stepper($my-stepper-theme);
+
+// $custom-stepper-theme: stepper-theme(
+//     $step-background : #ff33f5
+// );

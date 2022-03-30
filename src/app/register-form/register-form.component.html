@@ -1,0 +1,115 @@
+<igx-stepper #stepper>
+    <!-- <ng-template igxStepActiveIndicator>
+        <igx-icon>edit</igx-icon>
+    </ng-template> -->
+    <ng-template igxStepCompletedIndicator>
+        <igx-icon>check</igx-icon>
+     </ng-template>
+    <igx-step>
+        <span igxStepTitle>Step 1</span>
+        <p igxStepSubTitle>Account</p>
+        <div igxStepContent>
+            <div class="sample-step-actions">
+
+
+                <div style="width: 18rem;">
+                    <form  style="color: #D7D3DB;">
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email">                          
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="username">                          
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="password">
+                            <small id="passwordHelp" class="form-text"  style="color: #D7D3DB;">Your password should be at least 8 characters.</small>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="password2">Repeat Password</label>
+                            <input type="password" class="form-control" id="password2" placeholder="repeat password">
+                        </div>
+                        
+                      </form>
+                  </div>                
+            </div>
+            <button id="nextbutton" igxButton="raised" (click)="stepper.next()">Next</button>
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>Step 2</span>
+        <p igxStepSubTitle>Payment</p>
+        <div igxStepContent>
+            <div class="sample-step-actions">
+
+                <!-- <div class="grid-container">
+                    <div class="grid-child"> -->
+                <div class="sample-row">
+
+                        <form class="flex-form"  style="color: #D7D3DB;">
+                            <div class="form-group">
+                              <label for="cardnumber" id="lcardnumber">Card number</label>
+                              <input type="tel" class="form-control" id="cardnumber" aria-describedby="cardnumber" maxlength='16' placeholder="XXXX XXXX XXXX XXXX">                          
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="name" id="lname">Name on card</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Ex. John Smith">                          
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="expdate" id="lexpdate">Expiry date</label>
+                                <input type="text" class="form-control" id="expdate" placeholder="01/22">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="seccode" id="lseccode">Security code</label>
+                                <input type="password" class="form-control" id="seccode" placeholder="CCV" maxlength='3'>
+                            </div>                        
+                          </form>
+                    <!-- </div> -->
+                        <!-- <div class="grid-child"> -->
+                        <div class="sample-row">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="assets/images/card-image.png" alt="Card image">
+                                <div class="card-body">
+                                <p class="card-text">1000++ games</p>
+                                <h5 class="card-title" id="offer">14.99&euro;/mo</h5>
+                                <br>
+                                <small class="card-text">*Cancel any time</small>
+                                </div>
+                            </div>
+                    </div>
+                      
+                </div>
+                
+            </div>
+            <button id="nextbutton" igxButton="raised" (click)="stepper.prev()">Previous</button>
+            <button id="prevbutton" igxButton="raised" (click)="stepper.next()">Complete Payment</button>
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>Step 3</span>
+        <p igxStepSubTitle>Finish</p>
+        <div igxStepContent>
+            <div class="sample-step-actions">
+
+                <div style="width: 21rem; text-align: center;">
+                    <h4 id="congrats">Congratulations!</h4>
+                    <p id="complete">
+                        You completed you subscription successfully!
+                    </p>
+                    <img src="assets/images/Group91.png"  style="height: 230px;" alt="Congratulations image">
+                    </div>
+            </div>
+            <div class="sample-step-actions">
+                <button id="finishbutton" igxButton="raised" (click)="stepper.next()">Homepage</button>
+            </div>
+        </div>
+    </igx-step>
+</igx-stepper>
