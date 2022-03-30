@@ -6,9 +6,15 @@
 
 //   background-color: #1F1B29;
 // }
-#pop{
-    background: linear-gradient(#020202, #5A4C75);
-}
+// #pop{
+    // background: linear-gradient(#020202, #5A4C75);
+    // justify-content: center;
+    // align-items: center;
+    // display: flex;
+    // position: absolute;
+    // transform: translate(50%, 50%);
+
+// }
 
 $ep-sample-border: 1px solid #1F1B29;
 
@@ -41,6 +47,9 @@ igx-expansion-panel {
 .card{
     
     background-color:#1F1B29 ;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
 }
 
 .card-img-top{
