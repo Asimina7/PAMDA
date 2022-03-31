@@ -1,7 +1,11 @@
+import { IndexPageComponent } from './index-page/index-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', component: IndexPageComponent}
+  //{path: '**', component: 404}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

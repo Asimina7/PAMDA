@@ -16,6 +16,7 @@ import { IgxAccordionModule } from 'igniteui-angular';
 import { IgxSwitchModule } from "igniteui-angular";
 import { FooterComponent } from './footer/footer.component';
 import { OurGamesComponent } from './our-games/our-games.component';
+import { IndexPageComponent } from './index-page/index-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { OurGamesComponent } from './our-games/our-games.component';
     ImageComponent,
     FaqComponent,
     FooterComponent,
-    OurGamesComponent
+    OurGamesComponent,
+    IndexPageComponent
   ],
   imports: [
     BrowserModule,
