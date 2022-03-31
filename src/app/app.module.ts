@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IgxAccordionModule } from 'igniteui-angular';
 import { IgxSwitchModule } from "igniteui-angular";
 import { FooterComponent } from './footer/footer.component';
+import { OurGamesComponent } from './our-games/our-games.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     FeaturesComponent,
     ImageComponent,
     FaqComponent,
-    FooterComponent
+    FooterComponent,
+    OurGamesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule, 
     IgxAccordionModule, 
     IgxSwitchModule,
+    HttpClientModule
     
   ],
   providers: [],

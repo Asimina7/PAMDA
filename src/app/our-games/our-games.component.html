@@ -1,0 +1,30 @@
+<div class="container-fluid">
+<div class="row">
+    <h1>OUR GAMES</h1>
+
+    <div *ngFor="let number of results_our_games | slice:0:3" class="col-sm-2 img-container">
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="response.results[number].background_image" alt="Card image cap"
+                width="200px" height="150px">
+            <div class="card-body">
+                <h6 class="card-title">{{response.results[number].name}}</h6>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div *ngFor="let number of results_our_games | slice:3:6" class="col-sm-2 img-container">
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="response.results[number].background_image" alt="Card image cap"
+                width="200px" height="150px">
+            <div class="card-body">
+                <h6 class="card-title">{{response.results[number].name}}</h6>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
