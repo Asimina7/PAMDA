@@ -17,6 +17,9 @@ import { IgxSwitchModule } from "igniteui-angular";
 import { FooterComponent } from './footer/footer.component';
 import { OurGamesComponent } from './our-games/our-games.component';
 import { IndexPageComponent } from './index-page/index-page.component';
+import { Page404Component } from './page404/page404.component';
+import { HomeImageComponent } from './home-image/home-image.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { IndexPageComponent } from './index-page/index-page.component';
     FaqComponent,
     FooterComponent,
     OurGamesComponent,
-    IndexPageComponent
+    IndexPageComponent,
+    Page404Component,
+    HomeImageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
