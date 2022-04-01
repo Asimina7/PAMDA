@@ -36,9 +36,13 @@
                         </div>
                         
                       </form>
-                  </div>                
+                  </div>                   
+                        
             </div>
-            <button id="nextbutton" igxButton="raised" (click)="stepper.next()">Next</button>
+            <div class="sample-step-actions">
+
+                <button id="nextbutton" igxButton="raised" (click)="stepper.next()">Next &raquo;</button>  </div>
+            
         </div>
     </igx-step>
     <igx-step>
@@ -49,9 +53,9 @@
 
                 <!-- <div class="grid-container">
                     <div class="grid-child"> -->
-                <div class="sample-row">
+                <div class="sample-row" style="width: 36rem;margin-left: auto;margin-right: auto;">
 
-                        <form class="flex-form"  style="color: #D7D3DB;">
+                        <form class="flex-form"  style="color: #D7D3DB; width:18rem;">
                             <div class="form-group">
                               <label for="cardnumber" id="lcardnumber">Card number</label>
                               <input type="tel" class="form-control" id="cardnumber" aria-describedby="cardnumber" maxlength='16' placeholder="XXXX XXXX XXXX XXXX">                          
@@ -71,7 +75,7 @@
                                 <label for="seccode" id="lseccode">Security code</label>
                                 <input type="password" class="form-control" id="seccode" placeholder="CCV" maxlength='3'>
                             </div>                        
-                          </form>
+                        </form>
                     <!-- </div> -->
                         <!-- <div class="grid-child"> -->
                         <div class="sample-row">
@@ -89,8 +93,12 @@
                 </div>
                 
             </div>
-            <button id="nextbutton" igxButton="raised" (click)="stepper.prev()">Previous</button>
-            <button id="prevbutton" igxButton="raised" (click)="stepper.next()">Complete Payment</button>
+
+            <div class="sample-step-actions">
+                <button id="prevbutton" igxButton="raised" (click)="stepper.prev()">&laquo; Previous</button>
+                <button id="nextbutton" igxButton="raised" (click)="stepper.next()">Complete Payment &raquo;</button> 
+            </div>
+            
         </div>
     </igx-step>
     <igx-step>
@@ -99,7 +107,7 @@
         <div igxStepContent>
             <div class="sample-step-actions">
 
-                <div style="width: 21rem; text-align: center;">
+                <div style="width: 21rem; text-align: center;margin-left: auto;">
                     <h4 id="congrats">Congratulations!</h4>
                     <p id="complete">
                         You completed you subscription successfully!
@@ -108,7 +116,7 @@
                     </div>
             </div>
             <div class="sample-step-actions">
-                <button id="finishbutton" igxButton="raised" (click)="stepper.next()">Homepage</button>
+                <button id="finishbutton" igxButton="raised" (click)="stepper.next()">Homepage &raquo;</button>
             </div>
         </div>
     </igx-step>

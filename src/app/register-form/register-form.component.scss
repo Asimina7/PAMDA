@@ -29,9 +29,11 @@ $sample-gap: 20px;
 
 
 #nextbutton, #finishbutton{
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-left: auto;
     background-color: #7088DE;
     border-radius: 27px;
+    
 }
 
 #prevbutton{
@@ -39,7 +41,9 @@ $sample-gap: 20px;
     margin-left: 25px;
     border-radius: 27px;
     background-color: #7088DE;
+    //margin-right: auto;
 }
+
 
 
 
