@@ -12,7 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { createPopper } from '@popperjs/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { IgxAccordionModule } from 'igniteui-angular';
+import { IgxAccordionModule} from 'igniteui-angular';
 import { IgxSwitchModule } from "igniteui-angular";
 import { FooterComponent } from './footer/footer.component';
 import { OurGamesComponent } from './our-games/our-games.component';
@@ -20,6 +20,15 @@ import { IndexPageComponent } from './index-page/index-page.component';
 import { Page404Component } from './page404/page404.component';
 import { HomeImageComponent } from './home-image/home-image.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { HomeHeaderComponent } from './home-header/home-header.component';
+import { IgxStepperModule } from 'igniteui-angular';
+
+import { 
+	IgxButtonModule,
+	IgxButtonGroupModule
+ } from "igniteui-angular";
+import { FormsModule } from '@angular/forms';
+import { OurgameComponent } from './ourgame/ourgame.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +42,9 @@ import { HomePageComponent } from './home-page/home-page.component';
     IndexPageComponent,
     Page404Component,
     HomeImageComponent,
-    HomePageComponent
+    HomePageComponent,
+    HomeHeaderComponent,
+    OurgameComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +53,10 @@ import { HomePageComponent } from './home-page/home-page.component';
     BrowserAnimationsModule, 
     IgxAccordionModule, 
     IgxSwitchModule,
-    HttpClientModule
+    HttpClientModule,
+    IgxStepperModule,
+    IgxButtonModule,
+    IgxButtonGroupModule
     
   ],
   providers: [],
