@@ -29,6 +29,11 @@ import {
  } from "igniteui-angular";
 import { FormsModule } from '@angular/forms';
 import { OurgameComponent } from './ourgame/ourgame.component';
+import { MostPopularComponent } from './most-popular/most-popular.component';
+import { LatestReleasesComponent } from './latest-releases/latest-releases.component';
+import { RecommendedComponent } from './recommended/recommended.component';
+import { TopRatedComponent } from './top-rated/top-rated.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +49,12 @@ import { OurgameComponent } from './ourgame/ourgame.component';
     HomeImageComponent,
     HomePageComponent,
     HomeHeaderComponent,
-    OurgameComponent
+    OurgameComponent,
+    MostPopularComponent,
+    LatestReleasesComponent,
+    RecommendedComponent,
+    TopRatedComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

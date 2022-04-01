@@ -23,5 +23,17 @@ export class GamesService {
       );
   }
 
+  getDataFiltered(ordering: string) { //ERXETAI H KATIFORIA OI PARAMS ORIZONTAI KAI EPISTREFONTAI 
+    const params = new HttpParams().
+    set('key', 'b01201d5c4f74aabaa9c7ec243e78444')
+    .set('page_size','40')
+    .set('ordering',ordering)
+    return this.http.get(this.url, {params : params})
+    .pipe(
+      retry(1),
+      catchError(error => throwError( () =>`Something went wrong....${error}`))
+    ); 
+  }
+
 
 }

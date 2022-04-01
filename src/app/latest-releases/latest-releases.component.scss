@@ -1,0 +1,48 @@
+.row{
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.img-container {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+   
+   
+ }
+
+ .card{
+    background-color: #211C2B;
+    border: 1px;	
+    margin: 10px;
+    text-align: center;
+
+}
+
+.card-title{
+    font-size: 18px;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+h1{
+    font-size: 40px;
+    // text-align: center;
+    
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:white;
+    // text-shadow: rgb(255, 255, 255) 0px 8px 20px;
+    font-family: 'Segoe UI';
+    margin-left: 18%;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    height: 160px;
+
+}

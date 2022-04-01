@@ -1,0 +1,19 @@
+
+<div class="row">
+  
+    <h1 id="categoryName">Top Rated</h1>
+   
+  
+    <div *ngFor="let number of result" class="col-sm-2 img-container">
+     
+      <div class="card" style="width: 18rem; height: 16rem;">
+        <a routerLink="/details" [state]="{games: response.results[number]}">
+        <img class="card-img-top" [src]="response.results[number].background_image" alt="Card image cap">
+        <div class="card-body">
+          <h6 class="card-title">{{response.results[number].name}}</h6>
+  
+        </div>
+      </a>
+      </div>
+  
+</div>
