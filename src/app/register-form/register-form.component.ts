@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { IButtonGroupEventArgs } from 'igniteui-angular';
+import { Payment } from './payment.model';
+import { Register } from './register.model';
 
 @Component({
   selector: 'app-register-form',
@@ -51,10 +53,17 @@ export class RegisterFormComponent implements OnInit {
     }
 
 
+    register: Register = new Register();
+    payment: Payment = new Payment();
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  onSubmit(){
+      alert("Form has been submitted...")
+  }
 }
