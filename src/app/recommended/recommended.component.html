@@ -6,7 +6,7 @@
   
     <div *ngFor="let number of result" class="col-sm-2 img-container">
      
-      <div class="card" style="width: 18rem; height: 16rem;">
+      <div class="card" style="width: 20rem; height: 18rem;">
         <a routerLink="/details" [state]="{games: response.results[number]}">
         <img class="card-img-top" [src]="response.results[number].background_image" alt="Card image cap">
         <div class="card-body">
@@ -15,5 +15,9 @@
         </div>
       </a>
       </div>
-  
+      
 </div>
+<div id="btn">
+  <a><button class="btn btn-primary">Browse all games</button></a>
+</div>
+
