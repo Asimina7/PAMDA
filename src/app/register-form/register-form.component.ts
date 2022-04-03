@@ -85,6 +85,7 @@ export class RegisterFormComponent implements OnInit {
   
       });
       console.log(this.message1)
+      console.log(this.register)
       if(this.successful_reg !=null){
         alert(this.message1)
       }

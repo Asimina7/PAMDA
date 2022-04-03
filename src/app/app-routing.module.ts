@@ -6,6 +6,7 @@ import { Page404Component } from './page404/page404.component';
 import { IndexPageComponent } from './index-page/index-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 const routes: Routes = [
   {path: '', component: IndexPageComponent},
@@ -13,7 +14,9 @@ const routes: Routes = [
   {path: 'details', component: DetailsComponent},
   {path: 'games_page', component: GamesPageComponent},
   {path: 'sign_in', component: SignInComponent},
+  {path: 'register_page', component: RegisterFormComponent},
   {path: '**', component: Page404Component}
+
 
 ];
 

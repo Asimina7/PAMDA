@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 import { GamesService } from '../services/games.service';
 import { Login } from './sign-in.model';
 
@@ -16,7 +17,7 @@ export class SignInComponent implements OnInit {
   games:any;
   get:boolean = false;
 
-  constructor(private services:GamesService) { }
+  constructor(private services:GamesService, private router:Router) {}
 
   ngOnInit(): void {
   }
@@ -30,13 +31,15 @@ export class SignInComponent implements OnInit {
       error: err => this.message = err,
 
       complete: () => this.message = "Login successful"
-      
-
+            
     });
     console.log(this.message)
-    if(this.games !=null){
+    console.log(this.login)
+    if(this.games !=null && this.router.navigate(['/home_page'])){
       alert(this.message)
     }
+
+
    
      
   }

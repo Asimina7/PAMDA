@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">    <!-- bg-custom style="background-color: #1C121C;"-->
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">    <!-- bg-custom style="background-color: #1C121C;"-->
     <div class="container-fluid">
 
         <button class="navbar-toggler" data-toggle="collapse" (click)="toggleNavbar()" data-target="#collapse_target">
@@ -8,21 +8,21 @@
 
         <div class="collapse navbar-collapse" id="collapse_target" [ngClass]="{ 'show': navbarOpen }">
 
-            <a class="navbar-brand"> 
+            <a [routerLink]="['/home_page']" class="navbar-brand"> 
                 <img src="assets/images/pamdaheader.png" class="img-fluid img-responsive" alt="PAMDA Logo">
             </a>
-            <span class="navbar-text" style="color:#D7D3DB;">PAMDA</span>            
+            <span class="navbar-text" style="color:#D7D3DB; font-size:20px">PAMDA</span>            
     
             <ul class="navbar-nav">
                 <li ngbDropdown class="nav-item dropdown">
-                    <a ngbDropdownToggle class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="dropdown_target" href="#" style="color:#D7D3DB; padding-left: 30px;">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="dropdown_target" style="color:#D7D3DB; padding-left: 30px; font-size:18px">
                         Games
                     </a>    
                     <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown_target" data-bs-toggle="dropdown">
-                        <a ngbDropdownItem class="dropdown-item" href="#">Adventure</a>
-                        <a ngbDropdownItem class="dropdown-item" href="#">Puzzle</a>
-                        <a ngbDropdownItem class="dropdown-item" href="#">Action</a>
-                        <a ngbDropdownItem class="dropdown-item" href="#">Shooters</a>
+                        <a ngbDropdownItem class="dropdown-item" routerLink="/games_page">Action</a>
+                        <a ngbDropdownItem class="dropdown-item" routerLink="/games_page">Sports</a>
+                        <a ngbDropdownItem class="dropdown-item" routerLink="/games_page">Indie</a>
+                        <a ngbDropdownItem class="dropdown-item" routerLink="/games_page">Adventure</a>
                     </div>
                     
                 </li>               
@@ -46,13 +46,13 @@
                     </div>
                   </button>
                 <li ngbDropdown class="nav-item dropdown">
-                    <a ngbDropdownToggle class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="dropdown_target" href="#" style="color:#D7D3DB; padding-right: 40px;">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="dropdown_target" style="color:#D7D3DB; padding-right: 40px;">
                         <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" style="width: 45px;"
                             alt="Avatar" />
                     </a>    
                     <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown_target" data-bs-toggle="dropdown">
-                        <a ngbDropdownItem class="dropdown-item" href="#">Profile</a>
-                        <a ngbDropdownItem class="dropdown-item" href="#">Sign Out</a>
+                        <a ngbDropdownItem class="dropdown-item" routerLink="/error">Profile</a>
+                        <a ngbDropdownItem class="dropdown-item" routerLink="">Sign Out</a>
                     </div>
                     
                 </li> 

@@ -1,8 +1,8 @@
-<div id="pop">
+
 <div class="container-fluid">
     <img src="assets/images/controller.png" id="controller" alt="Image of controller">
-    <div class="modal-dialog ">
-        <div class="col-sm-12 main-section">
+    <div >
+        <div class="col-sm-3 main-section">
             <div class="modal-content">
                 <div class="col-12 user-img">
                     <img src="assets/images/logo-2.png" id="logo" alt="pamda logo">
@@ -57,14 +57,13 @@
                         <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary">Login</button>
                     </form>
                     <div class="forgot">
-                        <a href="#">Forgot your password/username?</a>
+                        <a [routerLink]="['/error']" style="color:#daf1ff">Forgot your password/username?</a>
                     </div>
                     <div class="sign-up">
-                        <a href="#">Don't have an account? <br>Register now</a>
+                        <a [routerLink]="['/register_page']" style="color:#daf1ff">Don't have an account? <br>Register now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>

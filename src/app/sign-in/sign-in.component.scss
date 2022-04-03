@@ -1,11 +1,12 @@
 body{
     background-color:#1C121C;
+    background-attachment: fixed;
 }
  
 
 .main-section{
     margin: 0 auto;
-    margin-top: 100px;  
+    // margin-top: 100px;  
     padding: 0;
 }
 
@@ -17,8 +18,9 @@ body{
 }
 
 #logo{
-    height: 250x;
-    width: 250px;    
+    margin-top: 30px;
+    height: 220x;
+    width: 220px;    
 }
 
 .user-img{
@@ -51,12 +53,12 @@ body{
     background-color: rgb(112, 136, 222);
     font-size: 19px;
     border-radius: 20px;
-    padding: 7px 70px;
+    padding: 7px 40px;
     border: 1px solid #7088DE;;
     margin: 0 auto;
     display: block;
     margin-bottom: 10px;
-    font-size: 25px;
+    // font-size: 25px;
 
     
 }
@@ -105,7 +107,7 @@ body{
 .form-check{
     margin-bottom: 10px;
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .forgot{
