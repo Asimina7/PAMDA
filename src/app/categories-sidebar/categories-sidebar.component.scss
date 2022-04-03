@@ -1,5 +1,7 @@
+
 .row{
-    margin-left: 1%;
+    margin-left: 0.5%;
+    
 }
 
 .list-group{
@@ -12,7 +14,7 @@ button{
     border: 2px solid white;
     color: white;
     font-family: 'Segoe UI';
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #title{
@@ -36,7 +38,7 @@ button:focus {
    
     
 }
-h3{
+h5{
     color:white
 }
 
@@ -57,7 +59,7 @@ h3{
 }
 
 .card-title{
-    font-size: 18px;
+    font-size: 12px;
     color: white;
     font-family: 'Segoe UI';
 }
@@ -67,7 +69,7 @@ a{
 }
 
 img{
-    height: 180px;
+    height: 150px;
 
 }
 
@@ -78,7 +80,7 @@ img{
   }
 
   .col-2{
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
 
