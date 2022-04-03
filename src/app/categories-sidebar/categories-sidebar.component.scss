@@ -1,0 +1,137 @@
+.row{
+    margin-left: 1%;
+}
+
+.list-group{
+    background-color: #443A57;
+    margin-bottom: 0.5rem;
+    
+}
+button{
+    background-color: #443A57;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+}
+
+#title{
+    background-color:  #443A57;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+button:hover {
+    background-color:  #443A57;
+    transform: scale(1.1);
+    color: white;
+    
+}
+
+
+button:focus {
+    background-color: #443A57;
+    color: white;
+   
+    
+}
+h3{
+    color:white
+}
+
+.img-container {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+   
+   
+ }
+
+ .card{
+    background-color: #211C2B;
+    border: 1px;	
+    margin: 10px;
+    text-align: center;
+
+}
+
+.card-title{
+    font-size: 18px;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    height: 180px;
+
+}
+
+  
+  /*Resize the wrap to see the search bar change!*/
+  .row{
+    margin-top: 50px;
+  }
+
+  .col-2{
+    margin-top: 60px;
+  }
+
+
+.search {
+    position: relative;
+    
+    // box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+
+
+}
+
+
+.search input {
+    height: 60px;
+    text-align: center;
+    border: 2px ;
+
+
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid white;
+}
+
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: #E4B564;
+    border-radius: 20px;
+    border: 0px;
+    color:black;
+}
+
+.search button:hover {
+    border: 0px;
+}
+
+input.form-control{
+    background-color: #403754;
+    border-radius: 20px;
+    
+}
+
+input::placeholder{
+    color: grey;
+    font-size: 20px;
+  }
+
+
+
+  
