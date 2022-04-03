@@ -5,22 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexHeaderComponent } from './index-header/index-header.component';
 import { FeaturesComponent } from './features/features.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { 
+	IgxButtonModule,
+	IgxButtonGroupModule,
+  IgxStepperModule,
+  IgxIconModule
+} from "igniteui-angular";
+
 import { ImageComponent } from './image/image.component';
 import { FaqComponent } from './faq/faq.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { createPopper } from '@popperjs/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IgxAccordionModule } from 'igniteui-angular';
 import { IgxSwitchModule } from "igniteui-angular";
 import { FooterComponent } from './footer/footer.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
-import { IgxStepperModule } from 'igniteui-angular';
-
-import { 
-	IgxButtonModule,
-	IgxButtonGroupModule
- } from "igniteui-angular";
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -28,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     IndexHeaderComponent,
     FeaturesComponent,
+    RegisterFormComponent,
     ImageComponent,
     FaqComponent,
     FooterComponent,
@@ -36,14 +40,15 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule, 
-    BrowserAnimationsModule, 
-    IgxAccordionModule, 
-    IgxSwitchModule,
+    BrowserAnimationsModule,
+    FormsModule,
     IgxStepperModule,
     IgxButtonModule,
-    IgxButtonGroupModule
-    
+    IgxButtonGroupModule,
+    IgxIconModule,
+    NgbModule,  
+    IgxAccordionModule, 
+    IgxSwitchModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
