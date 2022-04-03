@@ -34,6 +34,9 @@ import { LatestReleasesComponent } from './latest-releases/latest-releases.compo
 import { RecommendedComponent } from './recommended/recommended.component';
 import { TopRatedComponent } from './top-rated/top-rated.component';
 import { DetailsComponent } from './details/details.component';
+import { CategoriesSidebarComponent } from './categories-sidebar/categories-sidebar.component';
+import { GamesPageComponent } from './games-page/games-page.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import { DetailsComponent } from './details/details.component';
     LatestReleasesComponent,
     RecommendedComponent,
     TopRatedComponent,
-    DetailsComponent
+    DetailsComponent,
+    CategoriesSidebarComponent,
+    GamesPageComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +72,8 @@ import { DetailsComponent } from './details/details.component';
     HttpClientModule,
     IgxStepperModule,
     IgxButtonModule,
-    IgxButtonGroupModule
+    IgxButtonGroupModule,
+    FormsModule
     
   ],
   providers: [],
