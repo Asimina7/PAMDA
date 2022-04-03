@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { catchError, retry, throwError } from 'rxjs';
 import { Login } from '../sign-in/sign-in.model';
+import { Register } from '../register-form/register.model';
+import { Payment } from '../register-form/payment.model';
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +26,7 @@ export class GamesService {
       );
   }
 
-  getDataFiltered(ordering: string) { //ERXETAI H KATIFORIA OI PARAMS ORIZONTAI KAI EPISTREFONTAI 
+  getDataFiltered(ordering: string) { //ERXETAI H KATIGORIA OI PARAMS ORIZONTAI KAI EPISTREFONTAI 
     const params = new HttpParams().
     set('key', 'c9bea8cc4388434eb3c1dd58fc5a5306')
     .set('page_size','40')
@@ -73,7 +75,31 @@ export class GamesService {
     )
   }
 
+  //account
+  postDataReg(register: Register) {
+    const data = register;
 
+    return this.http.post(this.urlFakePost,JSON.stringify(data),this.httpOptions).pipe(
+
+      retry(1),
+
+      catchError(error => throwError( () =>`Wrong...${error}`))
+
+    )
+  }
+
+  //payment
+  postDataPay(payment: Payment) {
+    const data = payment;
+
+    return this.http.post(this.urlFakePost,JSON.stringify(data),this.httpOptions).pipe(
+
+      retry(1),
+
+      catchError(error => throwError( () =>`Wrong...${error}`))
+
+    )
+  }
 
 
 }

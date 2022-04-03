@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { IButtonGroupEventArgs } from 'igniteui-angular';
+import { GamesService } from '../services/games.service';
 import { Payment } from './payment.model';
 import { Register } from './register.model';
 
@@ -12,7 +13,7 @@ import { Register } from './register.model';
 export class RegisterFormComponent implements OnInit {
 
 
-  public orientation = 'horizontal';
+    public orientation = 'horizontal';
     public titlePosition = 'bottom';
     public stepperOrientations: any[] = [
         {
@@ -53,20 +54,57 @@ export class RegisterFormComponent implements OnInit {
     }
 
 
+
     register: Register = new Register();
     payment: Payment = new Payment();
 
+    //account
+    successful_reg: any;
+    message1: any;
 
-  constructor() { }
+    //payment
+    successful_pay: any;
+    message2:any;
+
+
+  constructor(private services:GamesService) { }
 
   ngOnInit(): void {
   }
 
 
-  onSubmit(){
-      alert("Form has been submitted...")
+  onSubmit1(){
+    this.services.postDataReg(this.register).subscribe({
+
+        next: data => this.successful_reg = data,
+  
+        error: err => this.message1 = err,
+  
+        complete: () => this.message1 = "Register successful"
+        
+  
+      });
+      console.log(this.message1)
+      if(this.successful_reg !=null){
+        alert(this.message1)
+      }
   }
+
   onSubmit2(){
-    alert("Card info has been submitted...")
+    this.services.postDataPay(this.payment).subscribe({
+
+        next: data => this.successful_pay = data,
+  
+        error: err => this.message2 = err,
+  
+        complete: () => this.message2 = "Payment successful"
+        
+  
+      });
+      console.log(this.message2)
+      console.log(this.payment)
+      if(this.successful_pay !=null){
+        alert(this.message2)
+      }
 }
 }

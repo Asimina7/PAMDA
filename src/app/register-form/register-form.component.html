@@ -13,7 +13,7 @@
 
 
                 <div style="width: 18rem;">
-                    <form #registerForm="ngForm" (ngSubmit)="onSubmit()" style="color: #D7D3DB;">
+                    <form #registerForm="ngForm" (ngSubmit)="onSubmit1()" style="color: #D7D3DB;">
                         <div class="form-group mb-3">
                             <label for="email">Email address</label>
                             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="email" [(ngModel)]="register.email" #email="ngModel" required email>                          
@@ -252,10 +252,6 @@
                     </div>
             </div>
             <div class="sample-step-actions">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Modal
-                </button>
-
                 <button id="finishbutton" igxButton="raised" (click)="stepper.next()">Homepage &raquo;</button>
             </div>
         </div>
