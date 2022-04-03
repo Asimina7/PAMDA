@@ -66,4 +66,7 @@ export class RegisterFormComponent implements OnInit {
   onSubmit(){
       alert("Form has been submitted...")
   }
+  onSubmit2(){
+    alert("Card info has been submitted...")
+}
 }

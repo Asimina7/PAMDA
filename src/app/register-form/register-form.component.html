@@ -41,7 +41,7 @@
                                 <div *ngIf="uname.hasError('required')">
                                    * Username required
                                 </div>
-                                <div *ngIf="email.hasError('minlength')">
+                                <div *ngIf="uname.hasError('minlength')">
                                     * Username must be at least 3 characters
                                  </div>
                                 
@@ -54,11 +54,11 @@
                             <input type="password" class="form-control" id="password" name="passwd" placeholder="password" [(ngModel)]="register.password"  #passwd="ngModel" 
                             required
                             minlength="8"
-                            pattern="^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=\\D*\\d)[A-Za-z\\d!$%@#£€*?&]$" 
+                            
                             >
                             <!--Pattern doesnt work-->
                             <!-- <small id="passwordHelp" class="form-text"  style="color: #D7D3DB;">Your password should be at least 8 characters.</small> -->
-                            
+                            <!-- pattern="^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=\\D*\\d)[A-Za-z\\d!$%@#£€*?&]$"  -->
                             <div
                                 *ngIf="passwd.invalid && (passwd.dirty || passwd.touched)" class="alert alert-danger"
                             >
@@ -68,9 +68,9 @@
                                 <div *ngIf="passwd.hasError('minlength')">
                                     * Password must be at least 8 characters
                                  </div>
-                                <div *ngIf="passwd.hasError('pattern')">
+                                <!-- <div *ngIf="passwd.hasError('pattern')">
                                     * Password must contain at least one uppercase letter, one lowercase letter, one number and one special character
-                                </div>
+                                </div> -->
                                 
                             </div>
 
@@ -126,7 +126,7 @@
                     <div class="grid-child"> -->
                 <div class="sample-row" style="width: 36rem;margin-left: auto;margin-right: auto;">
 
-                        <form #paymentForm="ngForm" (ngSubmit)="onSubmit()" class="flex-form"  style="color: #D7D3DB; width:18rem;">
+                        <form #paymentForm="ngForm" (ngSubmit)="onSubmit2()" class="flex-form"  style="color: #D7D3DB; width:18rem;">
                             <div class="form-group mb-3">
                               <label for="cardnumber" id="lcardnumber">Card number</label>
                               <input type="tel" class="form-control" id="cardnumber" name="cardnumber" aria-describedby="cardnumber" minlength="16" maxlength='16' placeholder="XXXX XXXX XXXX XXXX" [(ngModel)]="payment.cardNumber" 
