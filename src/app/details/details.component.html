@@ -1,1 +1,220 @@
-<p>details works!</p>
+<!-- Add icon library -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="pot">
+    <div class="container-fluid">
+        <div id="mar">
+            <div class="row">
+
+                <div class="col-1">
+
+                </div>
+                <div class="col-8">
+                    <h3 style="color: white;">{{result.games.name}}</h3>
+
+                </div>
+                <div class="col-3">
+
+                    <h3 style="color: white; font-size:20px;"><a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle" style="color: white;" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
+                        </a> Add to my list</h3>
+
+                </div>
+
+                <div class="col-1">
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div id="mp">
+            <div class="row">
+
+                <div class="col-1">
+
+                </div>
+                <div class="col-6">
+
+                    <img class="card-img-top" [src]="result.games.background_image" alt="Card image cap">
+
+
+
+                </div>
+                <div class="col-4">
+                    <img class="card-img-top" [src]="result.games.short_screenshots[4].image" alt="Card image cap"
+                        width="100" height="200">
+                    <h4 style="color: white; margin-top: 5%;">About</h4>
+                    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facilis,
+                        cumque quidem libero non
+                        esse.
+                        Sequi maiores, ab saepe necessitatibus consectetur, illo eos vero dolore, a nihil beatae hic
+                        fuga!
+                    </p>
+
+                </div>
+                <div class="col-1">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-2">
+                <img class="card-img-top" [src]="result.games.short_screenshots[1].image" alt="Card image cap">
+
+
+            </div>
+            <div class="col-2">
+                <img class="card-img-top" [src]="result.games.short_screenshots[2].image" alt="Card image cap">
+            </div>
+            <div class="col-2">
+                <img class="card-img-top" [src]="result.games.short_screenshots[3].image" alt="Card image cap">
+            </div>
+
+            <div class="col-1">
+                <div>
+                    <h6 style="color: white;">Rating:</h6>
+                </div>
+                <div>
+                    <h6 style="color: white;">Genre:</h6>
+                </div>
+                <div>
+                    <h6 style="color: white;">Release Date:</h6>
+                </div>
+
+
+
+            </div>
+            <div class="col-2">
+                <div>
+                    <!-- {{result.games.rating}} -->
+                   
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+
+                <div>
+                    <h6 style="color: white; font-size: 15px;">
+                        {{result.games.genres[0].name}}, {{result.games.genres[1].name}} </h6>
+                </div>
+                <div>
+                    <h6 style="color: white; font-size: 15px;">
+                        {{result.games.released}}
+                    </h6>
+
+                </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+
+            </div>
+
+            <div class="col-4">
+                <button class="btn" style="color:black">Play Now</button>
+            </div>
+            <div class="col-1">
+
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+
+                <div class="col-7 mb-2">
+                    <div id="poe">
+                        <h4 style="color: white;">You might also like:</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-1">
+
+                </div>
+
+                <div class="col-10">
+                    <div class="row">
+                        
+                        <div class="img-container">
+                       <a href="" routerLink="/error">
+                        <div class="card" style="width: 17rem; height: 15rem;" >
+                            <img class="card-img-top1" src="/assets/images/15.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title" style="color: white;">Halo Infinite</h6>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="" routerLink="/error">
+                        <div class="card" style="width: 17rem; height: 15rem;">
+                            <img class="card-img-top1" src="/assets/images/16.jpg" alt="Card image cap" >
+                            <div class="card-body">
+                                <h6 class="card-title" style="color: white;">Forza Horizon 5</h6>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="" routerLink="/error">
+                        <div class="card" style="width: 17rem; height: 15rem;">
+                            <img class="card-img-top1" src="/assets/images/17.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title" style="color: white;">Resident Evil: Village</h6>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="" routerLink="/error">
+                        <div class="card" style="width: 17rem; height: 15rem;">
+                            <img class="card-img-top1" src="/assets/images/18.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title" style="color: white;">Vallheim</h6>
+                            </div>
+                        </div>
+                        </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-1">
+
+                </div>
+
+
+                <div class="col-1">
+
+                </div>
+
+            </div>
+
+
+           
+
+        </div>
+
+
+
+
+     
+
+        <!-- {{result.games.name}} -->
+        <!-- <pre>{{result | json}}</pre> -->

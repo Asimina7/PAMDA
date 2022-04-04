@@ -64,7 +64,7 @@
       <div class="row gx-0">
          <div *ngFor="let number of results_our_games" class="col-md-3 img-container">
             <div class="card" style="width: 17rem; height: 15rem;">
-               <a routerLink="/details" [state]="{games: response.results[number]}">
+               <a routerLink="/details_page" [state]="{games: response.results[number]}">
                   <img class="card-img-top" [src]="response.results[number].background_image" alt="Card image cap"
                      width="200px" height="150px">
                   <div class="card-body">

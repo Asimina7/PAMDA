@@ -40,6 +40,7 @@ import { DetailsComponent } from './details/details.component';
 import { CategoriesSidebarComponent } from './categories-sidebar/categories-sidebar.component';
 import { GamesPageComponent } from './games-page/games-page.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     DetailsComponent,
     CategoriesSidebarComponent,
     GamesPageComponent,
-    SignInComponent
+    SignInComponent,
+    DetailsPageComponent
   ],
   imports: [
     BrowserModule,
