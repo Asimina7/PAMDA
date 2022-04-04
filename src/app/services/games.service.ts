@@ -16,7 +16,7 @@ export class GamesService {
 
   getData(category: string) {
     const params = new HttpParams().
-      set('key', 'c9bea8cc4388434eb3c1dd58fc5a5306')
+      set('key', 'c4f43e7594d94d62a33d633e020b2641')
       .set('page_size', '40')
       .set('genres', category)
     return this.http.get(this.url, { params: params })
