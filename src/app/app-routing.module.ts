@@ -1,3 +1,4 @@
+import { DetailsPageComponent } from './details-page/details-page.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { GamesPageComponent } from './games-page/games-page.component';
 import { DetailsComponent } from './details/details.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'games_page', component: GamesPageComponent},
   {path: 'sign_in', component: SignInComponent},
   {path: 'register_page', component: RegisterFormComponent},
+  {path: 'details_page', component: DetailsPageComponent},
   {path: '**', component: Page404Component}
 
 
