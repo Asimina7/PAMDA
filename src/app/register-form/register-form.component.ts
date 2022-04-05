@@ -87,7 +87,8 @@ export class RegisterFormComponent implements OnInit {
       console.log(this.message1)
       console.log(this.register)
       if(this.successful_reg !=null){
-        alert(this.message1)
+         alert(this.message1)
+        
       }
   }
 
@@ -106,6 +107,7 @@ export class RegisterFormComponent implements OnInit {
       console.log(this.payment)
       if(this.successful_pay !=null){
         alert(this.message2)
+        
       }
 }
 }

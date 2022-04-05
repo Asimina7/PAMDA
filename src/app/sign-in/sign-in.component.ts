@@ -35,8 +35,12 @@ export class SignInComponent implements OnInit {
     });
     console.log(this.message)
     console.log(this.login)
-    if(this.games !=null && this.router.navigate(['/home_page'])){
-      alert(this.message)
+    // if(this.games !=null && this.router.navigate(['/home_page'])){
+    //   alert(this.message)
+    // }
+
+    if(this.message ==undefined && this.router.navigate(['/home_page'])){
+      alert("Login successfull")
     }
 
 

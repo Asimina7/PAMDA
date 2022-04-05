@@ -53,8 +53,8 @@ export class GamesService {
 
 
 
-  urlFakePost = 'https://jsonplaceholder.typicode.com/posts'
-
+  //urlFakePost = 'https://jsonplaceholder.typicode.com/posts'
+  urlFakePost = 'https://reqres.in/api/users'
 
   httpOptions = {
     headers: new HttpHeaders({

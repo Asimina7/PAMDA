@@ -21,7 +21,32 @@ h3{
     color: white;
 }
 
+h6{
+    color: white; 
+}
+
 .row{
     text-align: center;
+}
+
+//modal
+
+#modalbutton {
+    background-color: #7088DE;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.modal-header {
+    background-color: #211C2B;
+    border-bottom: 0 none;
+}
+
+.modal-body{
+    background-color: #211C2B;
+}
+
+.modal-footer{
+    border-top:0 none;
 }
 

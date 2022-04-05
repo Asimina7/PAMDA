@@ -11,7 +11,8 @@
 
         <div class="col-4" style="margin-top:2em">
             <h3>Halo Infinite</h3>
-            <a href="#!" class="btn" style="color: black; font-size: 25px;">Play Now</a>
+            <h6>#1 game in world</h6>
+            <button type="button" class="btn" data-bs-dismiss="modal" style="color: black; font-size: 25px; border-radius: 27px;">Play Now</button>
         </div>
 
         <div class="col-4">
@@ -21,6 +22,31 @@
 </div>
 
 
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color:#ffffff;">Oops...</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                      <img src="assets/images/modal.png" alt="Unavailable game image" style="margin-left:0">
+                  </div>
+                  <div class="col-md-6">
+                   <p class="text-center" style="color:#ffffff;">This game is currently unavailable.</p> 
+                   <p class="text-center" style="color:#ffffff;">Please return to homepage and try again later.</p>
+                  </div>
+                </div>                
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" id="modalbutton" data-bs-dismiss="modal" style="background-color:#E4B564;">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
