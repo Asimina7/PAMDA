@@ -43,6 +43,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,9 @@ import { QuestionsComponent } from './questions/questions.component';
     SignInComponent,
     DetailsPageComponent,
     FaqPageComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    ProfileComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
