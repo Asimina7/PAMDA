@@ -8,6 +8,7 @@ import { IndexPageComponent } from './index-page/index-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { FaqPageComponent } from './faq-page/faq-page.component';
 
 const routes: Routes = [
   {path: '', component: IndexPageComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'sign_in', component: SignInComponent},
   {path: 'register_page', component: RegisterFormComponent},
   {path: 'details_page', component: DetailsPageComponent},
+  {path: 'faq_page', component: FaqPageComponent},
   {path: '**', component: Page404Component}
 
 
