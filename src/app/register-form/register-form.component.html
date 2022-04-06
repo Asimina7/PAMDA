@@ -102,7 +102,7 @@
                         <!-- <button type="submit" [disabled]="!registerForm.valid" id="nextbutton" igxButton="raised">Validate</button> -->
                         <div class="sample-step-actions">
                  
-                            <button type="submit" [disabled]="!registerForm.valid" id="nextbutton" igxButton="raised" (click)="stepper.next()">Next &raquo;</button>
+                            <button type="submit" [disabled]="!registerForm.valid" id="nextbutton"  (click)="stepper.next()">Next &raquo;</button>
                         </div>
                     </form>
                   </div>  
@@ -208,8 +208,8 @@
                             <!-- <button type="submit" id="nextbutton" igxButton="raised">Submit</button> -->
 
                             <div class="sample-step-actions">
-                                <button id="prevbutton" igxButton="raised" (click)="stepper.prev()">&laquo; Previous</button>
-                                <button id="nextbutton" [disabled]="!registerForm.valid" igxButton="raised" (click)="stepper.next()" style="width: 300px;">Complete Payment &raquo;</button> 
+                                <button id="prevbutton"  (click)="stepper.prev()" style="width: 180px;">&laquo; Previous</button>
+                                <button id="nextbutton" [disabled]="!registerForm.valid"  (click)="stepper.next()" style="width: 350px;">Complete Payment &raquo;</button> 
                             </div>
 
                         </form>
@@ -252,7 +252,7 @@
                     </div>
             </div>
             <div class="sample-step-actions">
-                <button routerLink="/home_page" id="finishbutton" igxButton="raised" (click)="stepper.next()">Homepage &raquo;</button>
+                <button routerLink="/home_page" id="finishbutton"  (click)="stepper.next()">Homepage &raquo;</button>
             </div>
         </div>
     </igx-step>
