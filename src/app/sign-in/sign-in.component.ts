@@ -39,7 +39,7 @@ export class SignInComponent implements OnInit {
     //   alert(this.message)
     // }
 
-    if(this.message ==undefined && this.router.navigate(['/home_page'])){
+    if((this.message ==undefined || this.message !=null) && this.router.navigate(['/home_page'])){
       alert("Login successfull")
     }
 

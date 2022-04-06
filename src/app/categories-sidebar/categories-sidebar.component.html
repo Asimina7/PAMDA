@@ -9,9 +9,10 @@
 <div class="row">
 
    <div class="col-2">
-      <div id="title"><h4>FILTERS</h4></div>
-      <div class="list-group" id="list-tab" role="tablist">
-         <h5>&nbsp; Genres</h5>
+      
+      <div class="list-group" id="list-tab" role="tablist"style="border-right: 1px solid white;border-left: 1px solid white;border-top: 1px solid white;">
+         <div id="title" ><h4>FILTERS</h4></div>
+         <h5 >&nbsp; Genres</h5>
          <button (click)="requestData('action')" class="list-group-item list-group-item-action"
             id="list-home-list" data-bs-toggle="list" role="tab" aria-controls="list-home">Action</button>
          <button (click)="requestData('sports')" class="list-group-item list-group-item-action" id="list-profile-list"
@@ -38,7 +39,7 @@
             id="list-settings-list" data-bs-toggle="list" role="tab" aria-controls="list-settings">Card</button>
       </div>
       
-      <div class="list-group " id="list-tab" role="tablist">
+      <div class="list-group " id="list-tab" role="tablist" style="border-right: 1px solid white;border-left: 1px solid white;border-top: 1px solid white;">
          <h5>&nbsp; Latest Releases</h5>
          <button routerLink="/error" class="list-group-item list-group-item-action"
             id="list-home-list" data-bs-toggle="list" role="tab" aria-controls="list-home">Last 30 Days </button>
@@ -49,7 +50,7 @@
          
       </div>
       
-      <div class="list-group " id="list-tab" role="tablist">
+      <div class="list-group " id="list-tab" role="tablist" style="border-right: 1px solid white;border-left: 1px solid white;border-top: 1px solid white;">
          <h5>&nbsp; Top</h5>
          <button routerLink="/error" class="list-group-item list-group-item-action"
             id="list-home-list" data-bs-toggle="list" role="tab" aria-controls="list-home">Best of the year </button>
