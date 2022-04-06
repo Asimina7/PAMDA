@@ -41,6 +41,8 @@ import { CategoriesSidebarComponent } from './categories-sidebar/categories-side
 import { GamesPageComponent } from './games-page/games-page.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { DetailsPageComponent } from './details-page/details-page.component';
     CategoriesSidebarComponent,
     GamesPageComponent,
     SignInComponent,
-    DetailsPageComponent
+    DetailsPageComponent,
+    ProfileComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
