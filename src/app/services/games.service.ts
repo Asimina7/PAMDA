@@ -26,16 +26,16 @@ export class GamesService {
       );
   }
 
-  getDataFiltered(ordering: string) { //ERXETAI H KATIGORIA OI PARAMS ORIZONTAI KAI EPISTREFONTAI 
+  getDataFiltered(ordering: string) {
     const params = new HttpParams().
-    set('key', 'c9bea8cc4388434eb3c1dd58fc5a5306')
-    .set('page_size','40')
-    .set('ordering',ordering)
-    return this.http.get(this.url, {params : params})
-    .pipe(
-      retry(1),
-      catchError(error => throwError( () =>`Something went wrong....${error}`))
-    ); 
+      set('key', 'c9bea8cc4388434eb3c1dd58fc5a5306')
+      .set('page_size', '40')
+      .set('ordering', ordering)
+    return this.http.get(this.url, { params: params })
+      .pipe(
+        retry(1),
+        catchError(error => throwError(() => `Something went wrong....${error}`))
+      );
   }
 
   getAllGames() {
@@ -66,11 +66,11 @@ export class GamesService {
   postData(login: Login) {
     const data = login;
 
-    return this.http.post(this.urlFakePost,JSON.stringify(data),this.httpOptions).pipe(
+    return this.http.post(this.urlFakePost, JSON.stringify(data), this.httpOptions).pipe(
 
       retry(1),
 
-      catchError(error => throwError( () =>`Wrong...${error}`))
+      catchError(error => throwError(() => `Wrong...${error}`))
 
     )
   }
@@ -79,11 +79,11 @@ export class GamesService {
   postDataReg(register: Register) {
     const data = register;
 
-    return this.http.post(this.urlFakePost,JSON.stringify(data),this.httpOptions).pipe(
+    return this.http.post(this.urlFakePost, JSON.stringify(data), this.httpOptions).pipe(
 
       retry(1),
 
-      catchError(error => throwError( () =>`Wrong...${error}`))
+      catchError(error => throwError(() => `Wrong...${error}`))
 
     )
   }
@@ -92,11 +92,11 @@ export class GamesService {
   postDataPay(payment: Payment) {
     const data = payment;
 
-    return this.http.post(this.urlFakePost,JSON.stringify(data),this.httpOptions).pipe(
+    return this.http.post(this.urlFakePost, JSON.stringify(data), this.httpOptions).pipe(
 
       retry(1),
 
-      catchError(error => throwError( () =>`Wrong...${error}`))
+      catchError(error => throwError(() => `Wrong...${error}`))
 
     )
   }

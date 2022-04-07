@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./faq.component.scss']
 })
 export class FaqComponent implements OnInit {
-  //public singleBranchExpand = false;
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -8,9 +8,9 @@ describe('HomeImageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeImageComponent ]
+      declarations: [HomeImageComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

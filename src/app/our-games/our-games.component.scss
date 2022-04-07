@@ -1,42 +1,41 @@
-
-.row{
+.row {
     justify-content: center;
-    // margin-bottom: 20px;
+
 
 }
 
 .img-container {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     align-content: space-evenly;
-   
-   
- }
 
- .card{
+
+}
+
+.card {
     background-color: transparent;
-    border: 1px;	
+    border: 1px;
     margin: 10px;
     text-align: center;
 
 }
 
-.card-title{
+.card-title {
     font-size: 14px;
     color: white;
     font-family: 'Segoe UI';
 }
 
-h2{
+h2 {
     font-size: 40px;
     text-align: center;
-   
+
     font-weight: bold;
-    color:white;
+    color: white;
     text-shadow: rgb(255, 255, 255) 0px 8px 20px;
     font-family: 'Segoe UI';
 }
 
-img{
+img {
     height: 160px;
 }

@@ -8,13 +8,13 @@ import { GamesService } from '../services/games.service';
 })
 export class MostPopularComponent implements OnInit {
 
-  games:any;
+  games: any;
   response: any;
   response1: any;
   message: string = '';
   ordering: any;
 
-  result = this.range(0,4)
+  result = this.range(0, 4)
   range(start: number, end: number) {
     return Array(end - start + 1).fill(1).map((_, idx) => start + idx)
   }
@@ -23,16 +23,16 @@ export class MostPopularComponent implements OnInit {
   constructor(private service: GamesService) { }
   ngOnInit(): void {
     this.requestData('-added')
-    
+
   }
 
-  requestData(ordering:any){ //DILONETAI EDO KAI STELNETAI STHN GETDATA
-    this.ordering=this.ordering; //Patontas to koympi kai allazontas katigoria allazei kai o titlos dinamika
+  requestData(ordering: any) {
+    this.ordering = this.ordering;
     this.service.getDataFiltered(ordering).subscribe({
-    next: data => this.response = data, 
-    error: err => this.message = err,
-    // complete: () => this.message = "Request completed...."
-  });
+      next: data => this.response = data,
+      error: err => this.message = err,
+      // complete: () => this.message = "Request completed...."
+    });
 
-}
+  }
 }

@@ -14,15 +14,15 @@ export class CategoriesSidebarComponent implements OnInit {
   range(start: number, end: number) {
     return Array(end - start + 1).fill(1).map((_, idx) => start + idx)
   }
-  requestData(category: string) { //DILONETAI EDO KAI STELNETAI STHN GETDATA
-    // this.categoryName=category; //Patontas to koympi kai allazontas katigoria allazei kai o titlos dinamika
+  requestData(category: string) {
+
     this.service.getData(category).subscribe({
       next: data => this.response = data
       // error: err => this.message = err,
       // complete: () => this.message = "Request completed...."
     });
   }
-  
+
   ngOnInit(): void {
     this.service.getAllGames().subscribe({
       next: data => this.response = data

@@ -1,40 +1,40 @@
-body{
-    background-color:#1C121C;
+body {
+    background-color: #1C121C;
     background-attachment: fixed;
 }
- 
 
-.main-section{
+
+.main-section {
     margin: 0 auto;
-    // margin-top: 100px;  
+
     padding: 0;
 }
 
-.modal-content{
+.modal-content {
     background-color: rgb(28, 18, 28);
     padding: 0 20px;
-    border : 2px #1C121C;
+    border: 2px #1C121C;
 
 }
 
-#logo{
+#logo {
     margin-top: 30px;
     height: 220x;
-    width: 220px;    
+    width: 220px;
 }
 
-.user-img{
+.user-img {
 
     text-align: center;
-    
+
 }
 
-.form-group{
+.form-group {
     margin-bottom: 30px;
-    
+
 }
 
-.form-group input{
+.form-group input {
     height: 42px;
     border: 0;
     font-size: 30px;
@@ -43,90 +43,88 @@ body{
     font-size: 20px;
 }
 
-.form-input button{
+.form-input button {
     width: 40%;
     margin: 5px 0 25px;
-    
+
 }
 
-.btn-primary{
+.btn-primary {
     background-color: rgb(112, 136, 222);
     font-size: 19px;
     border-radius: 20px;
     padding: 7px 40px;
-    border: 1px solid #7088DE;;
+    border: 1px solid #7088DE;
+    ;
     margin: 0 auto;
     display: block;
     margin-bottom: 10px;
-    // font-size: 25px;
 
-    
+
+
 }
 
-.btn-success:hover{
+.btn-success:hover {
     background-color: #13445e;
     border: 1px solid #daf1ff;
 
-    
+
 }
 
-.forgot{
-    padding: 5px ;
+.forgot {
+    padding: 5px;
     text-align: center;
 }
 
-.forgot a{
-    color:#daf1ff;
+.forgot a {
+    color: #daf1ff;
     text-decoration: none
-
 }
 
-.sign-up{
+.sign-up {
     padding: 10px 0 25px;
     text-align: center;
 }
 
-.sign-up a{
-    color:#daf1ff;
+.sign-up a {
+    color: #daf1ff;
     text-decoration: none
-
 }
 
-.label{
-    color:white;
+.label {
+    color: white;
     font-size: 25px;
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
 
 }
 
-.label-check{
-    color:white;
+.label-check {
+    color: white;
     margin-bottom: 20px;
 }
 
-.form-check{
+.form-check {
     margin-bottom: 10px;
     margin-top: 20px;
     font-size: 20px;
 }
 
-.forgot{
-    padding: 10px ;
+.forgot {
+    padding: 10px;
     text-align: center;
     font-size: 20px;
 }
 
-.sign-up{
+.sign-up {
     text-align: center;
     font-size: 20px;
-    
-}
-
-#controller{
-     position: fixed;
-     bottom: 100px; 
-     left: 50px;
-     max-width: 30%;  
 
 }
 
+#controller {
+    position: fixed;
+    bottom: 100px;
+    left: 50px;
+    max-width: 30%;
+
+}

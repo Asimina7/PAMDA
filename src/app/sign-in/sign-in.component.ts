@@ -11,19 +11,19 @@ import { Login } from './sign-in.model';
 })
 export class SignInComponent implements OnInit {
 
-  
-  login = new Login();
-  message:any;
-  games:any;
-  get:boolean = false;
 
-  constructor(private services:GamesService, private router:Router) {}
+  login = new Login();
+  message: any;
+  games: any;
+  get: boolean = false;
+
+  constructor(private services: GamesService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  onSubmit(){
-     
+  onSubmit() {
+
     this.services.postData(this.login).subscribe({
 
       next: data => this.games = data,
@@ -31,20 +31,18 @@ export class SignInComponent implements OnInit {
       error: err => this.message = err,
 
       complete: () => this.message = "Login successful"
-            
+
     });
     console.log(this.message)
     console.log(this.login)
-    // if(this.games !=null && this.router.navigate(['/home_page'])){
-    //   alert(this.message)
-    // }
-
-    if((this.message ==undefined || this.message !=null) && this.router.navigate(['/home_page'])){
-      alert("Login successfull")
+    if (this.games != null && this.router.navigate(['/home_page'])) {
+      alert(this.message)
     }
 
 
-   
-     
+
+
+
+
   }
 }

@@ -1,21 +1,3 @@
-// body{
-//     background-color: #1F1B29;
-// }
-
-// #accordion{
-
-//   background-color: #1F1B29;
-// }
-// #pop{
-    // background: linear-gradient(#020202, #5A4C75);
-    // justify-content: center;
-    // align-items: center;
-    // display: flex;
-    // position: absolute;
-    // transform: translate(50%, 50%);
-
-// }
-
 $ep-sample-border: 1px solid #1F1B29;
 
 .sample-wrapper {
@@ -40,19 +22,19 @@ igx-switch {
 
 igx-expansion-panel {
     border: $ep-sample-border;
-    background-color:#1F1B29 ;
+    background-color: #1F1B29;
     margin-bottom: 20px;
 }
 
-.card{
-    
-    background-color:#1F1B29 ;
+.card {
+
+    background-color: #1F1B29;
     margin-bottom: 50px;
     margin-top: 50px;
-    
+
 }
 
-.card-img-top{
+.card-img-top {
     width: 100%;
     border: 0px;
 }
@@ -62,16 +44,10 @@ igx-expansion-panel {
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    //border-color: rgb(112, 136, 222);
-    background-color:#E4B564;
-    //margin-left: 50px;
-    //margin-right: 50px;
+
+    background-color: #E4B564;
+
     border-radius: 21px;
-    // min-width: 50px;
 
-}    
 
-// .btn:hover{
-//         background-color: #13445e;
-//         border: 1px solid #daf1ff;        
-//     }
+}
