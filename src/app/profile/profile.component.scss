@@ -1,0 +1,56 @@
+.popa {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+h4,
+h5 {
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+.row {
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+
+
+}
+
+.card {
+    background-color: #211C2B;
+    border: 1px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.card-title {
+    font-size: 13px;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+h1 {
+    font-size: 40px;
+
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: white;
+
+    font-family: 'Segoe UI';
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-img-top {
+    height: 160px;
+}

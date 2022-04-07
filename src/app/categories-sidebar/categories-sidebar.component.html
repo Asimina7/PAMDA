@@ -1,0 +1,85 @@
+<div class="container">
+   <div class="row height d-flex justify-content-center align-items-center">
+      <div class="col-md-8">
+         <div class="search"> <input type="text" class="form-control" placeholder="Search categories games"
+               style="color:white; font-size: 20px;"> <button class="btn btn-primary">Search</button> </div>
+      </div>
+   </div>
+</div>
+
+<div class="row">
+
+   <div class="col-2">
+
+      <div class="list-group" id="list-tab" role="tablist"
+         style="border-right: 1px solid white;border-left: 1px solid white;border-top: 1px solid white;">
+         <div id="title">
+            <h4>FILTERS</h4>
+         </div>
+         <h5>&nbsp; Genres</h5>
+         <button (click)="requestData('action')" class="list-group-item list-group-item-action" id="list-home-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-home">Action</button>
+         <button (click)="requestData('sports')" class="list-group-item list-group-item-action" id="list-profile-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-profile">Sports</button>
+         <button (click)="requestData('indie')" class="list-group-item list-group-item-action" id="list-messages-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-messages">Indie</button>
+         <button (click)="requestData('adventure')" class="list-group-item list-group-item-action"
+            id="list-settings-list" data-bs-toggle="list" role="tab" aria-controls="list-settings">Adventure</button>
+         <button (click)="requestData('strategy')" class="list-group-item list-group-item-action"
+            id="list-settings-list" data-bs-toggle="list" role="tab" aria-controls="list-settings">Strategy</button>
+         <button (click)="requestData('shooter')" class="list-group-item list-group-item-action" id="list-settings-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-settings">Shooter</button>
+         <button (click)="requestData('simulation')" class="list-group-item list-group-item-action"
+            id="list-settings-list" data-bs-toggle="list" role="tab" aria-controls="list-settings">Simulation</button>
+         <button (click)="requestData('casual')" class="list-group-item list-group-item-action" id="list-settings-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-settings">Casual</button>
+         <button (click)="requestData('puzzle')" class="list-group-item list-group-item-action" id="list-settings-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-settings">Puzzle</button>
+         <button (click)="requestData('family')" class="list-group-item list-group-item-action" id="list-settings-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-settings">Family</button>
+         <button (click)="requestData('educational')" class="list-group-item list-group-item-action"
+            id="list-settings-list" data-bs-toggle="list" role="tab" aria-controls="list-settings">Educational</button>
+         <button (click)="requestData('card')" class="list-group-item list-group-item-action" id="list-settings-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-settings">Card</button>
+      </div>
+
+      <div class="list-group " id="list-tab" role="tablist"
+         style="border-right: 1px solid white;border-left: 1px solid white;border-top: 1px solid white;">
+         <h5>&nbsp; Latest Releases</h5>
+         <button routerLink="/error" class="list-group-item list-group-item-action" id="list-home-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-home">Last 30 Days </button>
+         <button routerLink="/error" class="list-group-item list-group-item-action" id="list-profile-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-profile">This week</button>
+         <button routerLink="/error" class="list-group-item list-group-item-action" id="list-messages-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-messages">Next week</button>
+
+      </div>
+
+      <div class="list-group " id="list-tab" role="tablist"
+         style="border-right: 1px solid white;border-left: 1px solid white;border-top: 1px solid white;">
+         <h5>&nbsp; Top</h5>
+         <button routerLink="/error" class="list-group-item list-group-item-action" id="list-home-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-home">Best of the year </button>
+         <button routerLink="/error" class="list-group-item list-group-item-action" id="list-profile-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-profile">Popular in 2021</button>
+         <button routerLink="/error" class="list-group-item list-group-item-action" id="list-messages-list"
+            data-bs-toggle="list" role="tab" aria-controls="list-messages">All time top 250</button>
+
+      </div>
+   </div>
+   <div class="col-10">
+      <div class="row gx-0">
+         <div *ngFor="let number of results_our_games" class="col-md-3 img-container">
+            <div class="card" style="width: 17rem; height: 15rem;">
+               <a routerLink="/details_page" [state]="{games: response.results[number]}">
+                  <img class="card-img-top" [src]="response.results[number].background_image" alt="Card image cap"
+                     width="200px" height="150px">
+                  <div class="card-body">
+                     <h6 class="card-title">{{response.results[number].name}}</h6>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

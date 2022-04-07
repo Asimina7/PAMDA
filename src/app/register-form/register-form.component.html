@@ -1,0 +1,236 @@
+<igx-stepper #stepper>
+
+    <ng-template igxStepCompletedIndicator>
+        <igx-icon>check</igx-icon>
+    </ng-template>
+    <igx-step>
+        <span igxStepTitle>Step 1</span>
+        <p igxStepSubTitle>Account</p>
+        <div igxStepContent>
+            <div class="sample-step-actions">
+
+
+                <div style="width: 18rem;">
+                    <form #registerForm="ngForm" (ngSubmit)="onSubmit1()" style="color: #D7D3DB;">
+                        <div class="form-group mb-3">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp" placeholder="email" [(ngModel)]="register.email"
+                                #email="ngModel" required email>
+                            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                                <div *ngIf="email.hasError('required')">
+                                    * Email required
+                                </div>
+                                <div *ngIf="email.hasError('email')">
+                                    * Invalid email
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="uname">Username</label>
+                            <input type="text" class="form-control" id="uname" name="uname" aria-describedby="username"
+                                placeholder="username" [(ngModel)]="register.userName" #uname="ngModel" required
+                                minlength="3">
+
+                            <div *ngIf="uname.invalid && (uname.dirty || uname.touched)" class="alert alert-danger">
+                                <div *ngIf="uname.hasError('required')">
+                                    * Username required
+                                </div>
+                                <div *ngIf="uname.hasError('minlength')">
+                                    * Username must be at least 3 characters
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="passwd"
+                                placeholder="password" [(ngModel)]="register.password" #passwd="ngModel" required
+                                minlength="8">
+
+                            <div *ngIf="passwd.invalid && (passwd.dirty || passwd.touched)" class="alert alert-danger">
+                                <div *ngIf="passwd.hasError('required')">
+                                    * Password required
+                                </div>
+                                <div *ngIf="passwd.hasError('minlength')">
+                                    * Password must be at least 8 characters
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="repasswd">Repeat Password</label>
+                            <input type="password" class="form-control" id="repasswd" name="repasswd"
+                                placeholder="repeat password" [(ngModel)]="register.repPassword" #repasswd="ngModel"
+                                required>
+
+                            <div *ngIf="repasswd.invalid && (passwd.dirty || passwd.touched)"
+                                class="alert alert-danger">
+                                <div *ngIf="repasswd.hasError('required')">
+                                    * The password confirmation does not match
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="sample-step-actions">
+
+                            <button type="submit" [disabled]="!registerForm.valid" id="nextbutton"
+                                (click)="stepper.next()">Next &raquo;</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>Step 2</span>
+        <p igxStepSubTitle>Payment</p>
+        <div igxStepContent>
+            <div class="sample-step-actions">
+
+
+                <div class="sample-row" style="width: 36rem;margin-left: auto;margin-right: auto;">
+
+                    <form #paymentForm="ngForm" (ngSubmit)="onSubmit2()" class="flex-form"
+                        style="color: #D7D3DB; width:18rem;">
+                        <div class="form-group mb-3">
+                            <label for="cardnumber" id="lcardnumber">Card number</label>
+                            <input type="tel" class="form-control" id="cardnumber" name="cardnumber"
+                                aria-describedby="cardnumber" minlength="16" maxlength='16'
+                                placeholder="XXXX XXXX XXXX XXXX" [(ngModel)]="payment.cardNumber" #cardnumber="ngModel"
+                                required pattern="^[0-9]*$">
+                            <div *ngIf="cardnumber.invalid && (cardnumber.dirty || cardnumber.touched)"
+                                class="alert alert-danger">
+                                <div *ngIf="cardnumber.hasError('required')">
+                                    * Card number required
+                                </div>
+                                <div *ngIf="cardnumber.hasError('minlength')">
+                                    * Card number must be at least 16 numbers
+                                </div>
+                                <div *ngIf="cardnumber.hasError('pattern')">
+                                    * Card number must contain only numbers
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="cardname" id="lname">Name on card</label>
+                            <input type="text" class="form-control" id="cardnamename" name="cardname"
+                                aria-describedby="name" placeholder="Ex. John Smith" [(ngModel)]="payment.cardName"
+                                #cardname="ngModel" required>
+                            <div *ngIf="cardname.invalid && (cardname.dirty || cardname.touched)"
+                                class="alert alert-danger">
+                                <div *ngIf="cardname.hasError('required')">
+                                    * Card name required
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="expdate" id="lexpdate">Expiry date</label>
+                            <input type="text" class="form-control" id="expdate" name="expdate" placeholder="01/22"
+                                [(ngModel)]="payment.expDate" #expdate="ngModel" pattern="(0?[1-9]|[1][0-2])/\d\d"
+                                required>
+
+                            <div *ngIf="expdate.invalid && (expdate.dirty || expdate.touched)"
+                                class="alert alert-danger">
+                                <div *ngIf="expdate.hasError('required')">
+                                    * Expiry date required
+                                </div>
+                                <div *ngIf="expdate.hasError('pattern')">
+                                    * Invalid format. Format must be mm/yy
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="seccode" id="lseccode">Security code</label>
+                            <input type="password" class="form-control" id="seccode" name="seccode" placeholder="CCV"
+                                [(ngModel)]="payment.secCode" #seccode="ngModel" maxlength='3' minlength="3" required>
+
+                            <div *ngIf="seccode.invalid && (seccode.dirty || seccode.touched)"
+                                class="alert alert-danger">
+                                <div *ngIf="seccode.hasError('required')">
+                                    * Security code required
+                                </div>
+                                <div *ngIf="seccode.hasError('minlength')">
+                                    * Security code must be at least 3 numbers
+                                </div>
+                                <div *ngIf="seccode.hasError('pattern')">
+                                    * Security code must contain only numbers
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="sample-step-actions">
+                            <button id="prevbutton" (click)="stepper.prev()" style="width: 180px;">&laquo;
+                                Previous</button>
+                            <button id="nextbutton" [disabled]="!registerForm.valid" (click)="stepper.next()"
+                                style="width: 350px;">Complete Payment &raquo;</button>
+                        </div>
+
+                    </form>
+
+                    <div class="sample-row">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/card-image.png" alt="Card image">
+                            <div class="card-body">
+                                <p class="card-text text-center">1000++ games</p>
+                                <h5 class="card-title text-center" id="offer">14.99&euro;/mo</h5>
+                                <p class="text-center">
+                                    <small class="card-text">*Cancel any time</small>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>Step 3</span>
+        <p igxStepSubTitle>Finish</p>
+        <div igxStepContent>
+            <div class="sample-step-actions">
+
+                <div style="width: 21rem; text-align: center;margin-left: auto;">
+                    <h4 id="congrats">Congratulations!</h4>
+                    <p id="complete">
+                        You completed you subscription successfully!
+                    </p>
+                    <img src="assets/images/Group91.png" style="height: 230px;" alt="Congratulations image">
+                </div>
+            </div>
+            <div class="sample-step-actions">
+                <button routerLink="/home_page" id="finishbutton" (click)="stepper.next()">Homepage &raquo;</button>
+            </div>
+        </div>
+    </igx-step>
+</igx-stepper>

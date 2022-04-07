@@ -1,0 +1,53 @@
+$ep-sample-border: 1px solid #1F1B29;
+
+.sample-wrapper {
+    overflow-y: auto;
+    max-height: 470px;
+    margin: 8px;
+}
+
+.body-container {
+    padding: 16px;
+}
+
+igx-switch {
+    padding: 16px;
+    color: white;
+}
+
+.nested-accordion {
+    margin: 10px 16px;
+    padding: 0;
+}
+
+igx-expansion-panel {
+    border: $ep-sample-border;
+    background-color: #1F1B29;
+    margin-bottom: 20px;
+}
+
+.card {
+
+    background-color: #1F1B29;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.card-img-top {
+    width: 100%;
+    border: 0px;
+}
+
+.btn {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #E4B564;
+
+    border-radius: 21px;
+
+
+}

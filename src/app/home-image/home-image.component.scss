@@ -1,0 +1,16 @@
+#pos {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+
+.page {
+    /* The image used */
+    background-image: url('/assets/images/8.png');
+
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

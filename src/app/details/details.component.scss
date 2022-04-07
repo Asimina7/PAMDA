@@ -1,0 +1,87 @@
+.btn {
+    background-color: #E4B564;
+    padding-left: 30%;
+    padding-right: 30%;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+
+#pot {
+    background: linear-gradient(#020202, #5A4C75);
+}
+
+#mar {
+    padding-top: 3%;
+    margin-bottom: 3%;
+}
+
+#mp {
+    margin-bottom: 1%;
+}
+
+.checked {
+    color: orange;
+}
+
+#poe {
+    margin-top: 3%;
+}
+
+.bi bi-plus-circle {
+    color: white;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+
+
+}
+
+.card {
+    background-color: #211C2B;
+    border: 1px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.card-title {
+    font-size: 14px;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+
+.card-img-top1 {
+    height: 160px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+//modal
+
+#modalbutton {
+    background-color: #7088DE;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.modal-header {
+    background-color: #211C2B;
+    border-bottom: 0 none;
+}
+
+.modal-body {
+    background-color: #211C2B;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
