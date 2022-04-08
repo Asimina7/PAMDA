@@ -1,4 +1,6 @@
-# Pamda
+# Video Game Streaming Service
+
+A functioning video game streaming service Web App using Angular, based on the interactive prototype design. Game data retrieved using the RAWG Video Game Database API.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
